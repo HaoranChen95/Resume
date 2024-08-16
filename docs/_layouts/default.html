@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- <html lang="{{ page.lang }}"> -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{page.title}}</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="https://kit.fontawesome.com/3e2e42ddf5.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+	<div>
+		{% include personal_info.html %}
+		
+		
+		<div class="left">
+			{% include navigation.html %}
+			<table>
+			<tr>
+				<td colspan="2"><h2>Professional Career</h2></td>
+			</tr>
+			<tr>
+				<td>April 2022 - Heute</td>
+				<td>
+					{{ site.data.work_exp[0].company[page.lang] }}
+					Environmental simulation for autonomous driving
+					Analyze and compare the availability and quality of lane markings
+					produced by different signal sources and marking tools, and present them
+					on a website.
+					Data processing, Scrum, DevOps, C++(boost, Sqlite), Python(Pyarrow,
+					Airflow), web development</td>
+			</tr>
+			<tr>
+				<td>Oktober 2020 - April 2022 </td>
+				<td>Forschungszentrum Jülich
+					Research assistant
+					Master thesis "Brownian dynamics simulations of dense active filament systems"
+					Investigate the aggregation of the active filaments under various conditions with Voronoi diagram and cluster analysis.
+					C++ (OpenMP, CMake, Eigen), Python (numpy, h5py, multithread, matplotlib, scipy), Linux, Git, Latex</td>
+			</tr>
+			<tr>
+				<td colspan="2"><h2>Education</h2></td>
+			</tr>
+			<tr>
+				<td>2019 - 2022</td>
+				<td>RWTH Aachen University
+					Material Science (MSc.)
+					Grade: 2.1 / 1.0
+					- Nanotechnology
+					- Electronic materials
+					- Process and material modeling
+					- Python</td>
+			</tr>
+			<tr>
+				<td>2017 - 2018</td>
+				<td>Karlsruhe Institute of Technology
+					German as a foreign language C1 (grade 2)
+					Materials Science and Engineering (M.Sc.)</td>
+			</tr>
+			<tr>
+				<td>2013-2017</td>
+				<td>University of Science and Technology Beijing
+					Nanomaterials and Nanotechnology (B. Eng.)
+					Grade: 2.0 / 1.0
+					- Computational Materials Science
+					- Solid State Physics
+					- Nanomaterial production and representation</td>
+			</tr>
+			<tr>
+				<td colspan="2"><h2>Skills & Competencies</h2></td>
+			</tr>
+			<tr>
+				<td>Languages</td>
+				<td> 
+					<table>
+						<tr>
+							<td>Englich</td>
+							<td>Very good in speaking and writing</td>
+						</tr>
+						<tr>
+					        <td>Germany </td>
+							<td>Very good in speaking and writing</td>
+						</tr>
+						<tr>
+							<td>Chinese</td>
+							<td> Native language</td>
+						</tr>
+						
+					</table>					</td>
+			</tr>
+			<tr>
+				<td>Computer Skills</td>
+				<td>
+					<table>
+						<tr>
+							<td>C++</td>
+							<td>Very good (2 years of practical experience)</td>
+						</tr>
+						<tr>
+							<td>Python</td>
+							<td>Very good (2 years of practical experience)</td>
+						</tr>
+						<tr>
+							<td>Adobe Photoshop</td>
+							<td> Good</td>
+						</tr>
+						<tr>
+							<td>Microsoft Office (Word, Excel, PowerPoint)</td>
+							<td>Very good</td>
+						</tr>
+						<tr>
+							<td>Windows, Linux</td>
+							<td>Very good</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>Hobby</td>
+				<td>Traveling, handicrafts, flute</td>
+			</tr>
+		</table>
+		<a href="#">毕业论文</a>
+	</div>
+</div>
+
+</body>
+</html>
