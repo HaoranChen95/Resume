@@ -1,0 +1,155 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[left=1.8cm, right=1.8cm, top=1.6cm, bottom=1.6cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{fontawesome5}
+
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+
+% ---------- Colors ----------
+\definecolor{heading}{RGB}{128,128,128}
+\definecolor{subheading}{RGB}{90,90,90}
+
+% ---------- Section Style ----------
+\titleformat{\section}{
+  \large\bfseries\color{heading}
+}{}{0em}{}[\titlerule]
+
+% ---------- Custom Commands ----------
+\newcommand{\resumeItem}[1]{
+  \item \small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill \textit{#2} \\
+  \textit{#3} \hfill \textit{#4}
+}
+
+% ---------- Document ----------
+\begin{document}
+
+% ---------- Header ----------
+{\LARGE \textbf{Haoran Chen}} \\[4pt]
+\textit{Software Engineer — C++ / Python / Core Systems} \\[8pt]
+
+Munich, Germany \quad|\quad EU Work Permit \quad|\quad +49 178 6047880 \\
+\href{mailto:haoran.chen.job@outlook.com}{haoran.chen.job@outlook.com} \quad|\quad
+\href{https://github.com/HaoranChen95}{GitHub} \quad|\quad
+\href{https://www.linkedin.com/in/haoran-chen95}{LinkedIn}
+
+\vspace{10pt}
+
+% ---------- Summary ----------
+\section*{Summary}
+Core systems software engineer with 4+ years of experience building
+\textbf{production-grade, event-driven systems} using \textbf{Python (primary)} and
+\textbf{C++ (performance-critical components)}.
+Experienced in designing and maintaining reliable infrastructure,
+including task execution, data pipelines, and system modernization,
+with a strong focus on \textbf{correctness, observability, and ownership}.
+Hands-on experience debugging complex issues across \textbf{Linux and Windows}
+in high-load production environments.
+
+\vspace{6pt}
+
+% ---------- Experience ----------
+\section*{Professional Experience}
+
+\resumeSubheading
+{Planet – Protel Hotelsoftware GmbH}
+{Oct 2024 -- Present}
+{Software Engineer (C++)}
+{Germany}
+
+\begin{itemize}[leftmargin=1.5em]
+  \resumeItem{Debugged, refactored, and modernized a large on-premise PMS system written in \textbf{C++} on Windows, including migration to a \textbf{64-bit architecture}.}
+  \resumeItem{Optimized performance and stability of long-lived production components in a legacy codebase.}
+  \resumeItem{Provided Level-3 technical support, collaborating with product managers and QA to deliver customer-specific solutions.}
+\end{itemize}
+
+\vspace{4pt}
+
+\resumeSubheading
+{Bertrandt Engineering Office GmbH}
+{Apr 2022 -- Jul 2024}
+{Software Engineer (C++ / Python)}
+{Germany}
+
+\begin{itemize}[leftmargin=1.5em]
+  \resumeItem{Designed and maintained production-grade data pipelines using \textbf{Python (FastAPI, Airflow)} and \textbf{C++} for processing and analyzing vehicle-recorded data.}
+  \resumeItem{Implemented automated testing and mocking strategies to improve reliability and maintainability of core services.}
+  \resumeItem{Decoded and processed high-volume data using \textbf{C++, Boost, and SQLite}.}
+  \resumeItem{Built Docker-based observability stack using \textbf{Grafana and InfluxDB} for KPI analysis.}
+\end{itemize}
+
+\vspace{4pt}
+
+\resumeSubheading
+{Research Center Jülich}
+{Nov 2020 -- Oct 2021}
+{Research Assistant}
+{Germany}
+
+\begin{itemize}[leftmargin=1.5em]
+  \resumeItem{Developed stochastic simulation systems for Brownian dynamics using \textbf{C++ and OpenMP} on HPC clusters (Linux).}
+  \resumeItem{Implemented data analysis and visualization pipelines using \textbf{Python (SciPy)}.}
+\end{itemize}
+
+\vspace{6pt}
+
+% ---------- Projects ----------
+\section*{Projects}
+
+\textbf{C++ Robust Task Executor} \hfill \href{https://github.com/HaoranChen95/cpp-robust-task-executor}{GitHub} \\
+\begin{itemize}
+  \item Designed and implemented a \textbf{core execution component} for
+        \textbf{high-throughput, event-driven workloads}, supporting concurrent task
+        submission and deterministic lifecycle management.
+  \item Built with \textbf{performance-critical C++ primitives} (threads, condition variables, RAII),
+        focusing on \textbf{correctness under load}, graceful shutdown, and explicit error handling.
+  \item Evaluated design trade-offs around \textbf{throughput, latency, and contention},
+        with emphasis on debuggability, maintainability, and production-readiness.
+\end{itemize}
+
+% ---------- Technical Skills ----------
+\section*{Technical Skills}
+
+\textbf{Languages:} C++, Python \\
+
+\textbf{Core Systems \& Concurrency:}
+Multithreading, thread pools, synchronization primitives, RAII, memory management \\
+
+\textbf{Python Ecosystem:}
+FastAPI, Airflow, PyTest, data processing, service-oriented architectures \\
+
+\textbf{Systems \& Infrastructure:}
+Linux, Windows, Docker, CI/CD pipelines, observability (Grafana, InfluxDB) \\
+
+\textbf{Databases:}
+MSSQL, SQLite \\
+
+\textbf{Core Concepts:}
+Event-driven systems, performance optimization, reliability, system design fundamentals
+
+\vspace{6pt}
+
+% ---------- Education ----------
+\section*{Education}
+
+\textbf{RWTH Aachen University} \hfill 2019 -- 2022 \\
+Master of Science – Material Science \\
+Thesis: Brownian Dynamics Simulations of Dense Active Filament Systems
+
+\vspace{4pt}
+
+\textbf{University of Science and Technology Beijing} \hfill 2013 -- 2017 \\
+Bachelor of Engineering – Nanomaterials and Nanotechnology
+
+% ---------- End ----------
+\end{document}
