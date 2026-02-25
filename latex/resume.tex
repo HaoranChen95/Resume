@@ -1,7 +1,7 @@
 \documentclass[11pt,a4paper]{article}
 
 % ---------- Packages ----------
-\usepackage[left=1.8cm, right=1.8cm, top=1.6cm, bottom=1.6cm]{geometry}
+\usepackage[left=1.4cm, right=1.4cm, top=1.2cm, bottom=1.2cm]{geometry}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
@@ -21,6 +21,8 @@
   \large\bfseries\color{heading}
 }{}{0em}{}[\titlerule]
 
+\titlespacing*{\section}{0pt}{6pt}{4pt} 
+
 % ---------- Custom Commands ----------
 \newcommand{\resumeItem}[1]{
   \item \small{#1}
@@ -35,121 +37,70 @@
 \begin{document}
 
 % ---------- Header ----------
-{\LARGE \textbf{Haoran Chen}} \\[4pt]
-\textit{Software Engineer — C++ / Python / Core Systems} \\[8pt]
+{\LARGE \textbf{Haoran Chen}} \\[2pt]
+\textit{Software Engineer \& Data Engineer — Python / ETL / Data Analytics / C++} \\[4pt]
+Munich, Germany \quad|\quad EU Work Permit \quad|\quad +49 178 6047880 \quad|\quad haoran.chen.job@outlook.com \\[2pt]
+GitHub: github.com/haoran-chen \quad|\quad LinkedIn: linkedin.com/in/haoran-chen
 
-Munich, Germany \quad|\quad EU Work Permit \quad|\quad +49 178 6047880 \\
-\href{mailto:haoran.chen.job@outlook.com}{haoran.chen.job@outlook.com} \quad|\quad
-\href{https://github.com/HaoranChen95}{GitHub} \quad|\quad
-\href{https://www.linkedin.com/in/haoran-chen95}{LinkedIn}
-
-\vspace{10pt}
+\vspace{2pt}
 
 % ---------- Summary ----------
 \section*{Summary}
-Core systems software engineer with 4+ years of experience building
-\textbf{production-grade, event-driven systems} using \textbf{Python (primary)} and
-\textbf{C++ (performance-critical components)}.
-Experienced in designing and maintaining reliable infrastructure,
-including task execution, data pipelines, and system modernization,
-with a strong focus on \textbf{correctness, observability, and ownership}.
-Hands-on experience debugging complex issues across \textbf{Linux and Windows}
-in high-load production environments.
+Software and Data Engineer with 4+ years of experience building scalable data pipelines, ETL processes, and robust backend architectures using Python and C++. Proven track record in processing complex datasets, designing observability dashboards for KPI monitoring, and modernizing legacy database models. Passionate about enabling data-driven decision-making, working within agile environments, and continuously expanding cloud infrastructure expertise (AWS/Azure). Adept at collaborating with cross-functional stakeholders to translate business requirements into impactful analytical solutions.
 
-\vspace{6pt}
+\vspace{2pt}
 
-% ---------- Experience ----------
+% ---------- Professional Experience ----------
 \section*{Professional Experience}
 
-\resumeSubheading
-{Planet – Protel Hotelsoftware GmbH}
-{Oct 2024 -- Present}
-{Software Engineer (C++)}
-{Germany}
-
-\begin{itemize}[leftmargin=1.5em]
-  \resumeItem{Debugged, refactored, and modernized a large on-premise PMS system written in \textbf{C++} on Windows, including migration to a \textbf{64-bit architecture}.}
-  \resumeItem{Optimized performance and stability of long-lived production components in a legacy codebase.}
-  \resumeItem{Provided Level-3 technical support, collaborating with product managers and QA to deliver customer-specific solutions.}
+\resumeSubheading{Planet Protel Hotelsoftware GmbH}{Oct 2024 -- Present}{Software Engineer (Data Architecture \& C++)}{Germany}
+\begin{itemize}[leftmargin=*, parsep=0pt, itemsep=2pt, topsep=2pt]
+  \resumeItem{Collaborated with cross-functional teams (Product, QA, Operations) to gather requirements and translate business needs into robust data architectures and working code.}
+  \resumeItem{Refactored and optimized legacy data models and complex database queries (MSSQL) to improve performance, reporting accuracy, and data consistency for global Enterprise clients.}
+  \resumeItem{Engineered an atomic DataChangeLog architecture to ensure strict audit trails and financial compliance.}
+  \resumeItem{Modernized core on-premise components, ensuring seamless data integration and long-term stability during hybrid cloud transitions.}
 \end{itemize}
 
-\vspace{4pt}
+\vspace{2pt}
 
-\resumeSubheading
-{Bertrandt Engineering Office GmbH}
-{Apr 2022 -- Jul 2024}
-{Software Engineer (C++ / Python)}
-{Germany}
-
-\begin{itemize}[leftmargin=1.5em]
-  \resumeItem{Designed and maintained production-grade data pipelines using \textbf{Python (FastAPI, Airflow)} and \textbf{C++} for processing and analyzing vehicle-recorded data.}
-  \resumeItem{Implemented automated testing and mocking strategies to improve reliability and maintainability of core services.}
-  \resumeItem{Decoded and processed high-volume data using \textbf{C++, Boost, and SQLite}.}
-  \resumeItem{Built Docker-based observability stack using \textbf{Grafana and InfluxDB} for KPI analysis.}
+\resumeSubheading{Bertrandt Engineering Office GmbH}{Apr 2022 -- Jul 2024}{Software Developer (Data Pipelines \& Python)}{Germany}
+\begin{itemize}[leftmargin=*, parsep=0pt, itemsep=2pt, topsep=2pt]
+  \resumeItem{Developed and optimized robust ETL data pipelines using Python (FastAPI, Pandas), Apache Airflow, and C++ to process and analyze large-scale vehicle-recorded data.}
+  \resumeItem{Designed and implemented data visualization dashboards (Grafana, InfluxDB) for KPI monitoring and data observability, enabling stakeholders to rapidly identify trends and make data-driven decisions.}
+  \resumeItem{Implemented automated testing and mocking strategies to improve the reliability and maintainability of core analytical systems.}
+  \resumeItem{Actively participated in agile development cycles (Scrum), consistently iterating approaches based on new data insights and evolving client requirements.}
 \end{itemize}
 
-\vspace{4pt}
+\vspace{2pt}
 
-\resumeSubheading
-{Research Center Jülich}
-{Nov 2020 -- Oct 2021}
-{Research Assistant}
-{Germany}
-
-\begin{itemize}[leftmargin=1.5em]
-  \resumeItem{Developed stochastic simulation systems for Brownian dynamics using \textbf{C++ and OpenMP} on HPC clusters (Linux).}
-  \resumeItem{Implemented data analysis and visualization pipelines using \textbf{Python (SciPy)}.}
+\resumeSubheading{Forschungszentrum J\"ulich}{Oct 2021 -- May 2022}{Master Thesis (Data Analysis \& HPC)}{Germany}
+\begin{itemize}[leftmargin=*, parsep=0pt, itemsep=2pt, topsep=2pt]
+  \resumeItem{Implemented complex mathematical models and data analysis pipelines using Python (SciPy, NumPy) to analyze and visualize massive datasets from active filament systems.}
+  \resumeItem{Utilized distributed computing techniques and OpenMP on High-Performance Computing (HPC) clusters (Linux) for large-scale stochastic simulations.}
 \end{itemize}
 
-\vspace{6pt}
-
-% ---------- Projects ----------
-\section*{Projects}
-
-\textbf{C++ Robust Task Executor} \hfill \href{https://github.com/HaoranChen95/cpp-robust-task-executor}{GitHub} \\
-\begin{itemize}
-  \item Designed and implemented a \textbf{core execution component} for
-        \textbf{high-throughput, event-driven workloads}, supporting concurrent task
-        submission and deterministic lifecycle management.
-  \item Built with \textbf{performance-critical C++ primitives} (threads, condition variables, RAII),
-        focusing on \textbf{correctness under load}, graceful shutdown, and explicit error handling.
-  \item Evaluated design trade-offs around \textbf{throughput, latency, and contention},
-        with emphasis on debuggability, maintainability, and production-readiness.
-\end{itemize}
+\vspace{2pt}
 
 % ---------- Technical Skills ----------
 \section*{Technical Skills}
 
-\textbf{Languages:} C++, Python \\
+\textbf{Data Engineering \& Analytics:} Python (Pandas, SciPy, FastAPI), ETL Processes, Apache Airflow, Data Modeling \\
+\textbf{Databases \& Cloud Computing:} MSSQL, SQLite, Cloud Concepts (AWS/Azure), Distributed Computing \\
+\textbf{Visualization \& Front-end:} Grafana, InfluxDB, PowerBI Concepts, HTML/CSS/JavaScript (Basic) \\
+\textbf{Core Software Engineering:} C++, Docker, CI/CD pipelines, Multithreading, Agile/Scrum Methodologies
 
-\textbf{Core Systems \& Concurrency:}
-Multithreading, thread pools, synchronization primitives, RAII, memory management \\
-
-\textbf{Python Ecosystem:}
-FastAPI, Airflow, PyTest, data processing, service-oriented architectures \\
-
-\textbf{Systems \& Infrastructure:}
-Linux, Windows, Docker, CI/CD pipelines, observability (Grafana, InfluxDB) \\
-
-\textbf{Databases:}
-MSSQL, SQLite \\
-
-\textbf{Core Concepts:}
-Event-driven systems, performance optimization, reliability, system design fundamentals
-
-\vspace{6pt}
+\vspace{2pt}
 
 % ---------- Education ----------
 \section*{Education}
 
-\textbf{RWTH Aachen University} \hfill 2019 -- 2022 \\
-Master of Science – Material Science \\
-Thesis: Brownian Dynamics Simulations of Dense Active Filament Systems
+\resumeSubheading{RWTH Aachen University}{2019 -- 2022}{Master of Science -- Material Science}{Aachen, Germany}
+\begin{itemize}[leftmargin=*, parsep=0pt, itemsep=2pt, topsep=2pt]
+  \resumeItem{\textit{Thesis:} Brownian Dynamics Simulations of Dense Active Filament Systems (Focus on Data Analytics \& HPC)}
+\end{itemize}
 
-\vspace{4pt}
+\vspace{2pt}
 
-\textbf{University of Science and Technology Beijing} \hfill 2013 -- 2017 \\
-Bachelor of Engineering – Nanomaterials and Nanotechnology
+\resumeSubheading{University of Science and Technology Beijing}{2013 -- 2017}{Bachelor of Engineering -- Nanomaterials and Nanotechnology}{Beijing, China}
 
-% ---------- End ----------
 \end{document}
